@@ -423,10 +423,7 @@ img {
   background-color: var(--blue-2);
   color: var(--cream);
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  overflow: auto;
 }
 
 #project .project-info-title {
@@ -450,14 +447,12 @@ img {
 }
 
 #project .project-item .project-info-img {
-  /* flex: 1; */
-  /* height: 100%; */
   flex-basis: 50%;
   border-radius: 2px solid var(--red-1);
   overflow: hidden;
-  width: 100%;
   position: relative;
   transition: 0.6s ease transform;
+  object-fit: contain;
   cursor: pointer;
 }
 
@@ -746,5 +741,4 @@ img {
     transform: scale(1.03);
   }
 }
-
 /* end of media query */
